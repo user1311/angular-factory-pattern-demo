@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  height: 100vh; 
+}
+
+app-side-navigation {
+  width: 200px; 
+  border-right: 1px solid #ccc;
+}
+
+.content {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

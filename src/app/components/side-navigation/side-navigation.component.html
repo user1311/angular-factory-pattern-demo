@@ -1,0 +1,8 @@
+<ul *ngFor="let task of list_items" >
+    <li (click)="selectComponent(task.id)">{{task.id}}</li>
+</ul>
+<ul>
+    <li (click)="selectComponent('card')">Card component</li>
+    <li (click)="selectComponent('table')">Table component</li>
+</ul>
+

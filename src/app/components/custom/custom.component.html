@@ -1,0 +1,29 @@
+    <div class="container-fluid" style="border: 1px solid black; border-radius: 2%;" >
+        <div class="row content" style="padding-top: 5%;">
+            <div class="col-11">
+              <h5 style="font-weight: bold;">{{data.title}}</h5>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-sm btn-outline-success">Complete</button>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-1">
+                <span class="badge bg-secondary">{{data.frequency}}</span>
+            </div>
+            <div class="col-11">
+                <a href="#">{{data.title}}</a>
+            </div>
+        </div>
+
+        <div class="row content">
+            <div class="col">
+                <h5>{{data.taskDescription}}</h5>
+                <ul *ngFor="let todo of data.todo" style="list-style: disc;">
+                    <li>{{todo}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+  
